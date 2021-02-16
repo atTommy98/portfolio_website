@@ -1,0 +1,15 @@
+.nav {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logoImageContainer {
+}
+
+.image {
+    cursor: pointer;
+}
