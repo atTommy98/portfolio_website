@@ -3,11 +3,13 @@
     width: 50px;
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
 }
 
 .logoImageContainer {
+    padding: 40px 10px 40px 10px;
+    margin: 0px 0px
 }
 
 .image {

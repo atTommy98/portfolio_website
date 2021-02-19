@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+.text {
+  color: #f7f7ff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.intro_background {
+  background-color: #131112;
+  padding: 10px;
+  padding: 10px 20vw 10px 20vw;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profile_picture {
+  border: 10px solid #db4c40;
+  width: 250px;
+  border-radius: 100%;
+  border-spacing: 50px;
+  padding: 10px;
+}
+
+.intro_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  margin-top: 100px;
+}
+
+.text_container {
+  margin: 0px;
+}
+
+.header {
+  font-size: 40px;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  border-bottom: 3px solid #db4c40;
+  padding-bottom: 8px;
+}
+
+.tagline {
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+  font-size: 26px;
+}
+
+.details {
+  margin: 5px 0px 5px 0px;
+  padding: 0px;
+  font-size: 16px;
+  opacity: 0.75;
+}
+
+/* Half width monitor*/
+@media screen and (max-width: 1600px) {
+  .intro_background {
+    background-color: #131112;
+    padding: 10px 10vw 10px 10vw;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 400px) {
+  .intro_background {
+    background-color: #131112;
+    padding: 10px;
+  }
+
+  .profile_picture {
+    border: 3px solid #db4c40;
+    width: 200px;
+    border-radius: 100%;
+    border-spacing: 50px;
+    padding: 10px;
+  }
+  
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 0px 10px;
+  }
+
+  .intro_container {
+    display: flex;
+    margin: 50px;
+    margin-top: 100px;
+  }
+
+  .text_container {
+    margin: 0px;
+  }
+
+  .header {
+    font-size: 36px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    border-bottom: 3px solid #db4c40;
+    padding-bottom: 8px;
+  }
+
+  .tagline {
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+    font-size: 26px;
+  }
+
+  .details {
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+    font-size: 16px;
+    opacity: 0.75;
+  }
+}
