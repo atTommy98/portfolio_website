@@ -1,10 +1,10 @@
-import css from "./Projects.module.css";
-import { projects } from "./data.js";
+import css from "./Software.module.css";
+import { projects } from "constants/data";
 
 export default function Projects() {
   return (
     <div className={css.container}>
-      <h1 className={css.header}>My Projects</h1>
+      <h1 className={css.header}>Software Engineer</h1>
       <div className={css.project_container}>
         {projects.map((project) => {
           return (

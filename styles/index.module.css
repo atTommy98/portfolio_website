@@ -1,8 +1,10 @@
 .section1 {
   background-color: #131112;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .section2 {
