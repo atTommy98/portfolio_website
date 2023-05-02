@@ -1,15 +1,20 @@
-import Link from "next/link";
 import Image from "next/image";
+import { useRef } from "react";
 import css from "./Nav.module.css";
 
-export default function Nav() {
-
-  const links = ["Home", "Software", "Music", "Contact"]
+export default function Nav({ scrollRef }) {
+  const links = [
+    { name: "Home", section: "section1" },
+    { name: "Software", section: "section2" },
+    { name: "Contact", section: "section3" },
+  ];
 
   return (
     <nav className={css.nav}>
       <div className={css.linkContainer}>
-        {links.map(link => <a className={css.link}>{link}</a>)}
+        {links.map((link) => (
+          <p className={css.link}>{link.name}</p>
+        ))}
       </div>
       <div className={css.socialsContainer}>
         <div className={css.logoImageContainer}>
@@ -23,7 +28,7 @@ export default function Nav() {
           </a>
         </div>
         <div className={css.logoImageContainer}>
-          <a href="https://github.com/atTommy98" target="_blank">
+          <a href="https://www.linkedin.com/in/tommy-holt98/" target="_blank">
             <Image
               className={css.image}
               src="/linkedInLogo.png"
@@ -32,7 +37,7 @@ export default function Nav() {
             />
           </a>
         </div>
-        <div className={css.logoImageContainer}>
+        {/* <div className={css.logoImageContainer}>
           <a href="https://github.com/atTommy98" target="_blank">
             <Image
               className={css.image}
@@ -41,7 +46,7 @@ export default function Nav() {
               height={30}
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

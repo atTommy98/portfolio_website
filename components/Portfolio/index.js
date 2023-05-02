@@ -1,21 +1,22 @@
 import css from "./Software.module.css";
-import { projects } from "constants/data";
+import { projects } from "data/data";
 
-export default function Projects() {
+export default function Portfolio() {
   return (
     <div className={css.container}>
-      <h1 className={css.header}>Software Engineer</h1>
+      <div className={css.header_container}>
+        <h1 className={css.header}>CHECK OUT MY PROJECTS</h1>
+      </div>
       <div className={css.project_container}>
         {projects.map((project) => {
           return (
             <a
+              className={css.card}
               href={project.link}
               key={project.image}
               target="_blank"
             >
-              <div className={css.card}>
-                <img src={project.image}></img>
-              </div>
+              <img src={project.image}></img>
             </a>
           );
         })}

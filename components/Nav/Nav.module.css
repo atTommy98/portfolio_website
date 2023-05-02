@@ -38,6 +38,7 @@
     color: white;
     text-shadow: 0px 0px 1px #00c1e8;
     transition: ease 0.4s;
+    cursor: pointer;
 }
 
 .link:hover {
